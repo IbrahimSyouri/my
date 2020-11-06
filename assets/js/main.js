@@ -6,7 +6,7 @@
   // Preloader
   $(window).on('load', function() {
     if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function() {
+      $('#preloader').delay(10).fadeOut('slow', function() {
         $(this).remove();
       });
     }
@@ -137,7 +137,7 @@
   // Init AOS
   function aos_init() {
     AOS.init({
-      duration: 1000,
+      duration: 100,
       once: true
     });
   }
