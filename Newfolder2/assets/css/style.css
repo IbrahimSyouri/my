@@ -5,11 +5,7 @@ body {
 }
 [data-theme="dark"]{
   background:#1d1f2f ;
- 
- 
 }
-
-
 [data-theme="dark"]  #footer {
     background: #1d1f2f;
   }
@@ -1186,20 +1182,36 @@ section {
     color: #FFFFFF;
     text-align: center;
     font-size: 25px;
-    padding: 0px;
+    
     height: 100%;
     width: 100%;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
+    
+  }
+  @media (max-width: 999px){
+    .buttonf, .buttong {
+      font-size: 20px;
+    }
+    .buttong span:after {
+      font-size: 300%r;
+     
+    }
+    .buttonf span:after {
+      font-size: 300%;
+    
+    }
   }
   .buttonf span, .buttong span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    
   }
-  
+  .cm{
+  padding-bottom: 10px;}
   .buttonf span:after {
     content: '\00bb';
     position: absolute;
@@ -1214,16 +1226,17 @@ section {
     content: '\00AB';
     position: absolute;
     opacity: 0;
-    top: 0;
-    left: -20px;
+    top: -48px;
+    left: -50px;
     transition: 0.5s;
+    font-size: 400%;
   }
   
   .buttonf:hover span {
     padding-right: 50px;
   }
   .buttong:hover span{
-    padding-left: 20px;
+    padding-left: 50px;
   }
   .buttonf:hover span:after{
     opacity: 1;
@@ -1353,27 +1366,51 @@ section {
   
   @media (max-width: 1199px){
       .h-time h4 {
+        width: 180%;
+        font-size:100%;
+      }  .timeline-row .timeline-time{
+        font-size:100% ;
+      }.h-dev h4 {
+      
+        font-size:100%;
+        }
+        .h-des h4 {
         
-        font-size:120%;
-      }
+          font-size:100%;
+          }
+          .h-adv h4 {
+        
+            font-size:100%;
+            }
   }
   @media (max-width: 999px){
     .h-time h4 {
-        width: 120%;
-      font-size:100%;
+        width: 220%;
+      font-size:80%;
     }
   
     .timeline-row .timeline-content h4 {
-      font-size:120% ;
+      font-size:90% ;
       line-height: 100%;
     }
     .timeline-row .timeline-content p {
-      font-size:65%; 
-      line-height: 90%;
+      font-size:75%; 
+      line-height: 100%;
     }
     .timeline-row .timeline-time{
-      font-size:120% ;
-    }
+      font-size:90% ;
+    }.h-dev h4 {
+    
+      font-size:90%;
+      }
+      .h-des h4 {
+      
+        font-size:90%;
+        }
+        .h-adv h4 {
+      
+          font-size:90%;
+          }
   
   }
   @media (max-width: 767px) {
@@ -1383,6 +1420,7 @@ section {
     .timeline:after {
      margin-left: 0px;
     }
+  
     .timeline .timeline-row {
       font-size:smaller ;
       
