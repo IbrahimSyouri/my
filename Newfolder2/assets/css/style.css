@@ -3,6 +3,8 @@ body {
   color: #272829;
   
 }
+
+
 [data-theme="dark"]{
   background:#1d1f2f ;
 }
@@ -36,6 +38,14 @@ background-color: #1d1f2f;
 [data-theme="dark"] .facts .count-box span {
   color: #fff;
 }
+[data-theme="dark"] #hero p {
+  color: #45505b;
+  animation: textColor 10s ease infinite;}
+[data-theme="dark"]  #hero .social-links a {
+  color: #45505b;
+  animation: textColor 10s ease infinite;}
+ [data-theme="dark"] .skills .progress-bar {
+    animation : backColor 10s ease infinite;}
 [data-theme="dark"] #hero:before {
 background: rgba(255, 255, 255, 0.13)!important;}
 [data-theme="dark"] .nav-menu .active > a{
@@ -68,6 +78,25 @@ background: rgba(255, 255, 255, 0.13)!important;}
   color: #252b37;
   background: #1d1f2f ;
   animation: textColor 10s ease infinite;}
+  [data-theme="dark"] .ice:after {
+    position: absolute;
+    content: "";
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    z-index: -1;
+    height: 95%;
+    width: 90%;
+   
+    margin: 0 auto;
+    transform: scale(.75);
+    -webkit-filter: blur(5vw);
+    -moz-filter: blur(5vw);
+    -ms-filter: blur(5vw);
+    filter: blur(5vw);
+    background: linear-gradient(315deg, #5de6de 0%, #b58ecc 74%);
+    background-size: 200% 200%;
+    animation: animateGlow 10s ease infinite;}
   [data-theme="dark"] section:after {
     position: absolute;
     content: "";
@@ -177,6 +206,7 @@ top:90px;
   stroke-width: 8px;
   stroke-linecap: round;
   stroke-linejoin: round;
+  
 }
 .power-switch .button .power-on .line, .power-switch .button .power-off .line {
   opacity: 0.2;
@@ -189,7 +219,10 @@ top:90px;
   stroke-dashoffset: 40;
 }
 
-
+.power-switch .button .power-off {
+  stroke: #00f1b5;
+  filter: drop-shadow(0px 6px 9px #8800d6);
+}
 
 
 .power-switch .button .power-on {
@@ -820,10 +853,13 @@ section {
     list-style: none;
     padding: 0;
   }
-  
+  @media (max-width: 767px){
+    .about .content ul {
+      font-size: 13px;
+  }
   .about .content ul li {
     padding-bottom: 10px;
-  }
+  }}
   
   .about .content ul i {
     font-size: 20px;
@@ -926,7 +962,8 @@ section {
   
   .resume .resume-item h5 {
     font-size: 16px;
-    background: #f7f8f9;
+    background:#45505b;
+    color: rgb(218, 218, 218);
     padding: 5px 15px;
     display: inline-block;
     font-weight: 600;
@@ -1779,6 +1816,20 @@ section {
   
   .services .iconbox-teal:hover .icon path {
     fill: #11dbcf;
+  }
+  @media (max-width: 770px) {
+    .services .icon-box {
+      padding: 35px 10px 40px 10px;
+    }
+      .services .icon-box h4 {
+        font-size: 20px;
+      }
+    .services .icon-box p {
+      line-height: 20px;
+      font-size: 12px;
+      margin-bottom: 0;
+   
+    }
   }
 
   .testimonials .section-header {
