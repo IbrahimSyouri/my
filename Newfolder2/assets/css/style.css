@@ -5,6 +5,7 @@ body {
 }
 
 
+
 [data-theme="dark"]{
   background:#1d1f2f ;
 }
@@ -156,23 +157,30 @@ background: rgba(255, 255, 255, 0.13)!important;}
   }
   
 
+  .mobile-power-switch {
+    
+    border: 50;
+    background: beige;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline: none !important;
+    line-height: 1;
+    cursor: pointer;
+  }
 .power-switch {
   --color-invert:#36096d;
-  --width: 300px;
-  --height: 300px;
-  position: absolute;
- 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  --width: 90px;
+  --height: 90px;
+  position: fixed!important ;
+  left: 10px;
+  top: -10px;
+  z-index: 9998;
+ align-items: left;
   width: var(--width);
   height: var(--height);
 }
 @media (min-width: 992px) {
-  .power-switch {
-top:90px;
-  left: 50%;
-  }
+ 
 }
 
 .power-switch .button {
@@ -856,11 +864,17 @@ section {
   @media (max-width: 767px){
     .about .content ul {
       font-size: 13px;
-  }
+  }}
   .about .content ul li {
     padding-bottom: 10px;
-  }}
-  
+  }
+  @media (max-width: 500px){
+    .about .content ul {
+      font-size: 10.5px;
+      
+  }.about .content ul i {
+    font-size: 11px!important;}
+}
   .about .content ul i {
     font-size: 20px;
     padding-right: 2px;
@@ -1830,6 +1844,52 @@ section {
       margin-bottom: 0;
    
     }
+  }
+  @media (max-width: 500px) {
+    .services .icon-box {
+      padding: 25px 7px 25px 7px;
+    }
+      .services .icon-box h4 {
+        font-size: 12px;
+      }
+    .services .icon-box p {
+      line-height: 13px;
+      font-size: 9.5px;
+      margin-bottom: 0;
+   
+    }
+  }
+
+
+
+  
+  .pricingTable10{text-align:center;box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);}
+  .pricingTable10 .pricingTable-header{padding:30px 0;background: #45505b;;position:relative;transition:all .3s ease 0s}
+  .pricingTable10:hover{box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);margin-top:-10px;}
+  .pricingTable10:hover .pricingTable-header{background:#0563bb}
+  .pricingTable10 .pricingTable-header:after,.pricingTable10 .pricingTable-header:before{content:"";width:16px;height:16px;border-radius:50%;border:1px solid #d9d9d8;position:absolute;bottom:12px}
+  .pricingTable10 .pricingTable-header:before{left:40px}
+  .pricingTable10 .pricingTable-header:after{right:40px}
+  .pricingTable10 .heading{font-size:20px;color:#fff;text-transform:uppercase;letter-spacing:2px;margin-top:0}
+  .pricingTable10 .price-value{display:inline-block;position:relative;font-size:55px;font-weight:700;color:#0563bb;transition:all .3s ease 0s}
+  .pricingTable10:hover .price-value{color:#fff}
+  .pricingTable10 .currency{font-size:30px;font-weight:700;position:absolute;top:6px;left:-19px}
+  .pricingTable10 .month{font-size:16px;color:#fff;position:absolute;bottom:15px;right:-30px;text-transform:uppercase}
+  .pricingTable10 .pricing-content{padding-top:50px;background:#fff;position:relative}
+  .pricingTable10 .pricing-content:after,.pricingTable10 .pricing-content:before{content:"";width:16px;height:16px;border-radius:50%;border:1px solid #45505b;;position:absolute;top:12px}
+  .pricingTable10 .pricing-content:before{left:40px}
+  .pricingTable10 .pricing-content:after{right:40px}
+  .pricingTable10 .pricing-content ul{padding:0 20px;margin:0;list-style:none}
+  .pricingTable10 .pricing-content ul:after,.pricingTable10 .pricing-content ul:before{content:"";width:8px;height:46px;border-radius:3px;background:#0563bb;position:absolute;top:-22px;z-index:1;box-shadow:0 0 5px #707070;transition:all .3s ease 0s}
+  .pricingTable10:hover .pricing-content ul:after,.pricingTable10:hover .pricing-content ul:before{background:#45505b}
+  .pricingTable10 .pricing-content ul:before{left:44px}
+  .pricingTable10 .pricing-content ul:after{right:44px}
+  .pricingTable10 .pricing-content ul li{font-size:15px;font-weight:700;color: #45505b;;padding:10px 0;border-bottom:1px solid #d9d9d8}
+  .pricingTable10 .pricing-content ul li:last-child{border-bottom:none}
+  .pricingTable10 .read{display:inline-block;font-size:16px;color:#fff;text-transform:uppercase;background:#45505b;padding:8px 25px;margin:30px 0;transition:all .3s ease 0s}
+  .pricingTable10 .read:hover{text-decoration:none}
+  .pricingTable10:hover .read{background:#0563bb}
+  @media screen and (max-width:990px){.pricingTable10{margin-bottom:25px}
   }
 
   .testimonials .section-header {

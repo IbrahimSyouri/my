@@ -21,6 +21,32 @@
 </head>
 <body>
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="fa fa-bars"></i></button>
+   <div class="power-switch">
+    <input type="checkbox" id="darkSwitch"/>
+    <label class="button" for="darkSwitch">
+      <svg class="power-off">
+        <use xlink:href="#line" class="line" />
+        <use xlink:href="#circle" class="circle" />
+      </svg>
+      <svg class="power-on">
+        <use xlink:href="#line" class="line" />
+        <use xlink:href="#circle" class="circle" />
+      </svg>
+      </label>
+  
+  
+  <!-- SVG -->
+  <svg xmlns="https://www.w3.org/2000/svg" style="display: none;">
+    <symbol xmlns="https://www.w3.org/2000/svg" viewBox="0 0 180 180" id="line">
+      <line x1="57.5" y1="46" x2="57.5" y2="74"/>
+    </symbol>
+    <symbol xmlns="https://www.w3.org/2000/svg" viewBox="0 0 30 150" id="circle">
+      <circle cx="50" cy="80" r="35"/>
+    </symbol>
+  </svg>
+  
+  <script src="dark-mode-switch.min.js"></script>
+</div>
   <header id="header" class="d-flex flex-column justify-content-center">
     <nav class="nav-menu">
       <ul>
@@ -75,32 +101,6 @@
         <a href="https://www.linkedin.com/in/ibrahim-syouri" class="linkedin"><i class="fa fa-linkedin"></i></a>
        </div>
       
-      <div class="power-switch">
-        <input type="checkbox" id="darkSwitch"/>
-        <label class="button" for="darkSwitch">
-          <svg class="power-off">
-            <use xlink:href="#line" class="line" />
-            <use xlink:href="#circle" class="circle" />
-          </svg>
-          <svg class="power-on">
-            <use xlink:href="#line" class="line" />
-            <use xlink:href="#circle" class="circle" />
-          </svg>
-          </label>
-      </div>
-      
-      <!-- SVG -->
-      <svg xmlns="https://www.w3.org/2000/svg" style="display: none;">
-        <symbol xmlns="https://www.w3.org/2000/svg" viewBox="0 0 150 150" id="line">
-          <line x1="108.5" y1="34" x2="108.5" y2="58"/>
-        </symbol>
-        <symbol xmlns="https://www.w3.org/2000/svg" viewBox="0 0 150 150" id="circle">
-          <circle cx="75" cy="80" r="35"/>
-        </symbol>
-      </svg>
-      
-      <script src="dark-mode-switch.min.js"></script>
-      </div>
     </div>
   </section><!-- End Hero -->
   <main id="main">
@@ -969,7 +969,7 @@
 
         <div class="row">
 
-          <div class="col-lg-4 col-6 d-flex align-items-stretch ice" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-4 col-6 d-flex align-items-stretch ice mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -1051,6 +1051,134 @@
 
       </div>
     </section><!-- End Services Section -->
+
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pricing Table</h2>
+          <p> </p>
+        </div>
+
+        <div class="row">
+    
+          <div class="col-12 ice">
+              <div class="pricingTable10">
+                  <div class="pricingTable-header">
+                      <h3 class="heading">Standard</h3>
+                      <span class="price-value">
+                          <span class="currency">$</span> 10
+                          <span class="month">/mo</span>
+                      </span>
+                  </div>
+                  <div class="pricing-content">
+                      <ul>
+                          <li>50GB Disk Space</li>
+                          <li>50 Email Accounts</li>
+                          <li>50GB Monthly Bandwidth</li>
+                          <li>10 Subdomains</li>
+                          <li>15 Domains</li>
+                      </ul>
+                      <a href="#" class="read">sign up</a>
+                  </div>
+              </div>
+          </div> 
+        </div> </br></br></br>
+          <div class="container" data-aos="fade-up"></div>
+
+          <div class="section-title">
+            <h2>Pricing Table</h2>
+            <p> </p>
+          </div>
+        <div class="row">
+    
+              <div class="col-md-3 col-6 ice">
+                  <div class="pricingTable10">
+                      <div class="pricingTable-header">
+                          <h3 class="heading">Standard</h3>
+                          <span class="price-value">
+                              <span class="currency">$</span> 10
+                              <span class="month">/mo</span>
+                          </span>
+                      </div>
+                      <div class="pricing-content">
+                          <ul>
+                              <li>50GB Disk Space</li>
+                              <li>50 Email Accounts</li>
+                              <li>50GB Monthly Bandwidth</li>
+                              <li>10 Subdomains</li>
+                              <li>15 Domains</li>
+                          </ul>
+                          <a href="#" class="read">sign up</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-6 ice">
+                  <div class="pricingTable10">
+                      <div class="pricingTable-header">
+                          <h3 class="heading">Business</h3>
+                          <span class="price-value">
+                              <span class="currency">$</span> 20
+                              <span class="month">/mo</span>
+                          </span>
+                      </div>
+                      <div class="pricing-content">
+                          <ul>
+                              <li>60GB Disk Space</li>
+                              <li>60 Email Accounts</li>
+                              <li>60GB Monthly Bandwidth</li>
+                              <li>15 Subdomains</li>
+                              <li>20 Domains</li>
+                          </ul>
+                          <a href="#" class="read">sign up</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-6 ice">
+                  <div class="pricingTable10">
+                      <div class="pricingTable-header">
+                          <h3 class="heading">Premium</h3>
+                          <span class="price-value">
+                              <span class="currency">$</span> 30
+                              <span class="month">/mo</span>
+                          </span>
+                      </div>
+                      <div class="pricing-content">
+                          <ul>
+                              <li>70GB Disk Space</li>
+                              <li>70 Email Accounts</li>
+                              <li>70GB Monthly Bandwidth</li>
+                              <li>20 Subdomains</li>
+                              <li>25 Domains</li>
+                          </ul>
+                          <a href="#" class="read">sign up</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-6 ice">
+                  <div class="pricingTable10">
+                      <div class="pricingTable-header">
+                          <h3 class="heading">Extra</h3>
+                          <span class="price-value">
+                              <span class="currency">$</span> 40
+                              <span class="month">/mo</span>
+                          </span>
+                      </div>
+                      <div class="pricing-content">
+                          <ul>
+                              <li>80GB Disk Space</li>
+                              <li>80 Email Accounts</li>
+                              <li>80GB Monthly Bandwidth</li>
+                              <li>25 Subdomains</li>
+                              <li>30 Domains</li>
+                          </ul>
+                          <a href="#" class="read">sign up</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
